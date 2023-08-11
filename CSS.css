@@ -1,0 +1,137 @@
+*{
+    max-width: 100%;
+    margin: 0%;
+   flex-wrap: wrap;
+}
+
+.lista,li{
+    gap: 25px;
+    display: inline-block;
+    position: relative;
+    color: #E50914;
+    font-family: sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.4 all ease;    
+    margin: 10px;
+    text-decoration: none;
+}
+
+li {
+    display: inline-block;
+}
+
+li:hover{
+    color: #E50914;
+    transition: 0.4s all ease;
+}
+
+li::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #E50914;
+    transform-origin: bottom right;
+    transition: 0.5s ease-out;
+}
+
+li:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* Aqui referece a imagem de cada avatar*/
+
+.avatares{
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+    border-radius: 100px;
+}
+
+.contas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* aqui referece a animacao dos avatares*/
+
+.avatares:hover{
+    transform: scale(1.05);
+    transition: 0.7s;
+    border: solid 5px #E50914;
+    border-radius: 100%;
+}
+
+body{
+    background: #E50914;
+    margin: 0px;  
+}
+
+header{
+    background-color: black;
+    margin: 0%;
+}
+
+img{
+    width: 250px;
+    margin: 0px;
+    border: solid black;
+    padding: 5px;
+    border-radius: 25px;
+}
+
+/* aqui referente a div de conteiner (imagem + texto)*/
+.conteiner{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+p{
+    margin: 15px;
+}
+
+section{
+   background-image: url(Icones/Stranger-Things-4.jpg);
+   background-position: center;
+   width: auto;
+   background-repeat: no-repeat;
+   background-color: black;
+}
+
+footer{
+    background-color: #0000009f;
+    color: white;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+
+#titulo-imag{
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+table{
+    margin: 5px;
+    width: 1000px;
+    height: 100px;
+}
+svg{
+    width: 45px;
+    position: fixed;
+    right: 5px;
+    top: 25px;
+}
